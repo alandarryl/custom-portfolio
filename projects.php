@@ -13,18 +13,21 @@
 <!-- page content -->
 
 <div class="container">
-    <h1>My Services</h1>
+    <h1>My Projects</h1>
     <div class="projects">
         <div class="project">
-            <h2>Service 1</h2>
+            <img src="" alt="">
+            <h2>Project 1</h2>
             <p>Description of project 1.</p>
         </div>
         <div class="project">
-            <h2>Service 2</h2>
+            <img src="" alt="">
+            <h2>Project 2</h2>
             <p>Description of project 2.</p>
         </div>
         <div class="project">
-            <h2>Service 3</h2>
+            <img src="" alt="">
+            <h2>Project 3</h2>
             <p>Description of project 3.</p>
         </div>
     </div>

@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Profile Image */
+img.rounded-circle {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #007bff;
+}
+
+/* Timeline */
+.timeline {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.timeline li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #007bff;
+    font-size: 1.5rem;
+    line-height: 1;
+}
