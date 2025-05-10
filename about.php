@@ -11,6 +11,22 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/about_style.css">
 </head>
+<style>
+    .container.my-5 {
+        min-height: 70vh;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img.img-fluid {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 7px;
+        border: 2px solid rgb(71, 151, 255);
+    }
+</style>
 <body>
     
 <!-- Navigation Bar -->
@@ -21,7 +37,7 @@
     <div class="row align-items-center">
         <!-- Left Side: Image -->
         <div class="col-md-4 text-center">
-            <img src="assets/images/profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle shadow">
+            <img src="./assets/images/jonathan2.jpg" alt="Profile Picture" class="img-fluid shadow">
         </div>
         <!-- Right Side: Content -->
         <div class="col-md-8">
