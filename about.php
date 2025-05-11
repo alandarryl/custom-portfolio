@@ -26,6 +26,41 @@
         border-radius: 7px;
         border: 2px solid rgb(71, 151, 255);
     }
+
+    .top-content, .middle-content, .bottom-content {
+        margin: 20px 0;
+    }
+
+    .middle-content .list-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .list-group .list-group-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    max-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
 </style>
 <body>
     
@@ -47,6 +82,31 @@
                     Nice to meet you! I am Okana Jonathan, a junior web developer and currently a student in Paris at ECE. 
                     If you have any questions about me or my work, please do not hesitate to contact me. I will be happy to answer you.
                 </p>
+            </div>
+            <div class="middle-content mb-4" id="skills">
+                <h3 class="text-secondary">Skills</h3>
+                <ul class="list-group ">
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">JavaScript</li>
+                    <li class="list-group-item">PHP</li>
+                    <li class="list-group-item">MySQL</li>
+                    <li class="list-group-item">React</li>
+                    <li class="list-group-item">Laravel</li>
+                    <li class="list-group-item">Bootstrap</li>
+                    <li class="list-group-item">Git</li>
+                    <li class="list-group-item">GitHub</li>
+                    <li class="list-group-item">Figma</li>
+                    <li class="list-group-item">Canva</li>
+                    <li class="list-group-item">UI/UX Design</li>
+                    <li class="list-group-item">Responsive Design</li>
+                    <li class="list-group-item">Team Collaboration</li>
+                    <li class="list-group-item">Problem Solving</li>
+                    <li class="list-group-item">Time Management</li>
+                    <li class="list-group-item">Communication</li>
+                    <li class="list-group-item">Adaptability</li>
+                    <li class="list-group-item">Creativity</li>
+                </ul>
             </div>
             <div class="bottom-content" id="timeline">
                 <h3 class="text-secondary">My Journey</h3>
