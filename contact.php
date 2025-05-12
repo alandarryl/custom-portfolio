@@ -2,7 +2,7 @@
 
 // contact.php
 // Include database connection
-include './include/db.php';
+// include './connect.php';
 
 // Check if the form is submitted
 
@@ -29,6 +29,13 @@ include './include/db.php';
         width: 100%;
         max-width: 600px;
         margin-top: 20px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .container.my-5 form h1 {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .container.my-5 form .form-label {
@@ -49,8 +56,8 @@ include './include/db.php';
 <!-- page content form -->
 
 <div class="container my-5">
-    <h1>Contact Me</h1>
     <form action="contact.php" method="POST">
+        <h1>Contact Me</h1>
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
             <input type="text" class="form-control" id="name" name="name" required>

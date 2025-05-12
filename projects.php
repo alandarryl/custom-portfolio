@@ -75,7 +75,7 @@
 <div class="container my-5">
     <h1>My Projects</h1>
     <div class="projects">
-        <a href="#">
+        <a href="project_detail.php">
             <div class="project">
                 <img src="./assets/images/jonathan1.jpg" alt="">
                 <h2>Project 1</h2>

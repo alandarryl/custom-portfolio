@@ -45,7 +45,7 @@
         padding: 0 10px 10px;
     }
 
-    .container.my-5 .servicess a {
+    .container.my-5 .services a {
         text-decoration: none;
         color: inherit;
         transition: scale 0.3s ease;
@@ -67,7 +67,7 @@
 
 <div class="container my-5">
     <h1>My Projects</h1>
-    <div class="projects">
+    <div class="services">
         <a href="#">
             <div class="service">
                 <h2>Project 1</h2>
