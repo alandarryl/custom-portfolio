@@ -15,6 +15,10 @@ document.addEventListener('DOMContentLoaded', function () {
         link.addEventListener('click', function (e) {
             e.preventDefault(); // Empêcher le comportement par défaut du lien
 
+            dynamicContent.innerHTML = '<p class="text-center"><i class="fa fa-spinner fa-spin"></i> Loading...</p>'; // Afficher un message de chargement
+
+            // console.log('Loading content for:', this); // Debugging
+
             const target = this.getAttribute('data-target'); // Récupérer le fichier cible
 
             if (!target) {
