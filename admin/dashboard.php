@@ -1,4 +1,5 @@
-<!-- filepath: c:\xampp\htdocs\PHP\projet personal\CUSTOM PORTFOLIO\admin\dashboard.php -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +31,10 @@
             background-color: #495057;
             color: #fff;
         }
+        .sidebar a.active {
+            background-color: #007bff;
+            color: #fff;
+        }
         .content {
             padding: 20px;
         }
@@ -39,57 +44,31 @@
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Sidebar -->
-            <div class="col-md-3 col-lg-2 sidebar">
-                <h3>Admin Panel</h3>
-                <a href="#">Dashboard</a>
-                <a href="#">Manage Projects</a>
-                <a href="#">Manage Skills</a>
-                <a href="#">Manage Contact Info</a>
-                <a href="#">Settings</a>
-                <a href="#">Logout</a>
-            </div>
-            <!-- Main Content -->
-            <div class="col-md-9 col-lg-10 content">
-                <h1 class="mb-4">Welcome to the Admin Dashboard</h1>
-                <div class="row">
-                    <!-- Card 1 -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Projects</h5>
-                                <p class="card-text">Manage and update your portfolio projects.</p>
-                                <a href="#" class="btn btn-primary">View Projects</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Skills</h5>
-                                <p class="card-text">Add or update your skills.</p>
-                                <a href="#" class="btn btn-primary">Manage Skills</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Contact Info</h5>
-                                <p class="card-text">Update your contact information.</p>
-                                <a href="#" class="btn btn-primary">Edit Contact Info</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 sidebar">
+            <h3>Admin Panel</h3>
+            <a href="#" class="load-content" data-target="./manage/manage_project.php">Manage Projects</a>
+            <a href="#" class="load-content" data-target="./manage/manage_skills.php">Manage Skills</a>
+            <a href="#" class="load-content" data-target="./manage/manage_message.php">Manage Messages</a>
+            <a href="#" class="load-content" data-target="./manage/setting.php">Settings</a>
+            <a href="logout.php" class="btn btn-danger" style="color: #fff;" >Logout</a>
+        </div>
+        <!-- Main Content -->
+        <div class="col-md-9 col-lg-10 content">
+            <h1 class="mb-4">Welcome to the Admin Dashboard</h1>
+            <div id="dynamic-content">
+                <!-- Le contenu chargé dynamiquement apparaîtra ici -->
+                <p>Select an option from the sidebar to manage your portfolio.</p>
             </div>
         </div>
     </div>
+</div>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- autres script -->
+     <script src="../admin/manage/manage_script.js" ></script>
 </body>
 </html>
