@@ -15,27 +15,36 @@
         align-items: center;
     }
 
+    .container.my-5 h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #feffbf;
+    }
+
     .container.my-5 .projects {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 70px;
+        gap: 15px;
         margin-top: 20px;
         width: 100%;
     }
 
     .container.my-5 .projects .project {
-        width: 300px;
+        width: 370px;
         text-align: center;
         border-radius: 7px;
+        background-color: #3a2b70;
+        color: #feffbf;
         /* border: 2px solid rgb(71, 151, 255); */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: start;
     }
 
     .projects .project img {
         width: 100%;
         height: auto;
-        border-radius: 7px;
+        border-radius: 7px 7px 0 0;
         margin-bottom: 10px;
         object-fit: cover;
         height: 200px;
@@ -43,14 +52,17 @@
 
     .projects .project h2 {
         font-size: 1.5rem;
+        color: #feffbf;
+        padding: 10px;
         margin: 10px 0;
     }
 
     .projects .project p {
         font-size: 1rem;
-        color: #555;
+        color: #feffbf;
         padding: 0 10px 10px;
     }
+
 
     .container.my-5 .projects a {
         text-decoration: none;
@@ -61,6 +73,18 @@
     .container.my-5 .projects .project:hover {
         transform: scale(1.05);
         transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+        .container.my-5 .projects {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container.my-5 .projects .project {
+            width: 100%;
+            max-width: 370px;
+        }
     }
 
 </style>

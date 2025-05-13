@@ -45,16 +45,18 @@
         min-width: 800px;
         margin-left: 20px;
         padding: 20px;
+        background-color: #3a2b70;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .project-details h1 {
         font-size: 2rem;
         margin-bottom: 20px;
+        color: #feffbf;
     }
 
     .project-details p {
         font-size: 1rem;
-        color: #555;
+        color: #f8f9fa;
         padding: 0 10px 10px;
     }
 
@@ -78,6 +80,7 @@
     .project-details h2 {
         font-size: 1.5rem;
         margin: 10px 0;
+        color: #feffbf;
     }
 
     .project-details .list-group {
@@ -96,6 +99,7 @@
     margin: 0 5px;
     padding: 5px 7px;
     border-radius: 5px;
+    border: none;
     background-color: #f8f9fa;
     color: #007bff;
     font-weight: bold;
@@ -114,7 +118,8 @@
 
     .project-details a {
         text-decoration: none;
-        color: inherit;
+        color: rgb(71, 151, 255);
+        font-size: 1rem;
         transition: scale 0.3s ease;
     }
 

@@ -30,6 +30,9 @@
         max-width: 600px;
         margin-top: 20px;
         padding: 20px;
+        background-color: #3a2b70;
+        color: #feffbf;
+        border-radius: 17px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
@@ -41,6 +44,17 @@
     .container.my-5 form .form-label {
         font-weight: bold;
     }
+
+    .container.my-5 form .form-control {
+    color: #feffbf; /* Couleur du texte à l'intérieur de l'input */
+    background-color: #1d1345; /* Couleur de fond de l'input */
+    border: 1px solid #6c757d; /* Bordure de l'input */
+}
+
+.container.my-5 form .form-control::placeholder {
+    color: #b8a9d9; /* Couleur du placeholder */
+    opacity: 1; /* Assure que le placeholder est bien visible */
+}
 
     .container.my-5 form .btn-primary {
         background-color: rgb(71, 151, 255);
@@ -65,6 +79,10 @@
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
         </div>
         <div class="mb-3">
             <label for="message" class="form-label">Message</label>

@@ -28,6 +28,8 @@
         width: 300px;
         text-align: center;
         border-radius: 7px;
+        background-color: #3a2b70;
+        color: #feffbf;
         /* border: 2px solid rgb(71, 151, 255); */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
